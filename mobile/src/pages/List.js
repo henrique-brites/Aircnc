@@ -21,7 +21,7 @@ export default function List() {
       <Image style={styles.logo} source={logo} />
 
       <ScrollView>
-        {techs.map( tech => <SpotList key={tech} tech={tech} />)} 
+        {techs.map(tech => <SpotList key={tech} tech={tech} />)} 
       </ScrollView>
     </SafeAreaView>
   )
@@ -29,7 +29,7 @@ export default function List() {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
+    flex: 1,
   },
 
   logo: {

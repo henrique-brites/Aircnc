@@ -1,7 +1,6 @@
-import axios from 'axios';
+import axios from 'axios'
+import serverConfig from '../config/server-config'
 
-const api = axios.create({
-  baseURL: 'http://192.168.0.11:3333', // 'http://10.0.2.2:3333',
-});
-
-export default api;
+export default axios.create({
+  baseURL: serverConfig.URL
+})
